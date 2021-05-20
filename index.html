@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haasyl</title>
+    <link rel = "stylesheet" href = "styling.css">
+</head>
+<body>
+        <nav>
+            <img src="https://landen.imgix.net/9azidkju81ay/assets/448t8hqg.png?w=100" alt="haasyl-image">
+            <ul>
+                <li >
+                    <div id="sg">
+                        <div id="sg2">Already have an Account? </div>
+                        <button id="btn1" type="submit"><span id="btntxt">Sign In</span></button>
+                    </div>
+                </li>  
+            </ul>
+        </nav>
+        <section id="container">
+            <div class="div3">
+                    <div id="hdiv"><h1>Calculate your Earned Salary Now!</h1>
+                        <p>Each day of work adds value to your company. 
+                            How much does it add to you? Register now to find out.</p>
+                    </div>
+                    <div id="imgdiv">
+                        <img id="x" src="https://landen.imgix.net/9azidkju81ay/assets/3kvx2yt4.png?w=230&h=400&fit=crop">
+                    </div>
+            </div>
+            <div class="div4">
+                    <div class="formdiv">
+                        <div >
+                            <h1 style="margin-bottom: 0px;">Get Started</h1>
+                            Please fill in the form details
+                        </div>
+    
+                        <div id="regdiv">
+                            <form name="myform" action="#" method="POST" onsubmit="return validateform()">
+                   
+                                <p id="Name">
+                                    <label for="fname" style="display: block;"><b>Field Name</b></label>
+                                    <input type="text" id="fname" name="fname" required>
+                                    <span class="error"></span>
+                                </p>
+                                
+                                <p id="sirname">
+                                    <label for="lname" style="display: block;"><b>Last Name</b></label>
+                                    <input type="text" id="lname" name="lname" required>
+                                    <span class="error"></span>
+                                </p>
+                                
+                                <p id="contact">
+                                    <label for="mnum" style="display: block;"><b>Mobile Number</b></label>
+                                    <input type="text" id="mnum" name="mnum" required minlength="10" maxlength="10 ">
+                                    <br>
+                                    <i id = "iid">An OTP will be sent to your number for verification</i>
+                                    <br>
+                                    <span class="error"></span>
+                                </p>
+                                
+                                <p id="salary">
+                                    <label for="sal" style="display: block;"><b>Basic Salary per Month (in Rupees)</b></label>
+                                    <input type="text" id="sal" name="sal" required>
+                                    <span class="error"></span>
+                                </p>
+        
+                                <p>
+                                    <label for="sdate" style="display: block;"><b>Salary Date</b></label>
+                                    <input list="dates" id="sdate" name="sdate" placeholder="1st of every Month" required/>
+                                    <datalist id="dates">
+                                        <option value="1st of every Month"></option>
+                                        <option value="10th of every Month"></option>
+                                        <option value="20th of every Month"></option>
+                                    </datalist>
+                                </p>
+                                <button id="subbtn" type="submit">Register Now</button>
+                            </form>
+                            <p style="font-weight: lighter; font-size: 10px;">By registering, you agree to haasyl's <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a></p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+</body>
+<script src="script.js"></script>
+</html>
